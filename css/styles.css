@@ -1,9 +1,31 @@
 body {
   background-image: url(/images/sofia_white.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 900px;
+  max-width: 90%;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
+}
+p a {
+  color: red;
+}
+#preview {
+  color: black;
+  text-align: center;
 }
 
 /*
@@ -12,14 +34,14 @@ body {
   ========================================
 */
 h1 {
-  font-size: 30px;
+  font-size: 200%;
   font-weight: 400;
   color: white;
   float: center;
   text-align: center;
   line-height: 65px;
   margin: auto;
-  padding: 0;
+  padding-right: 9%;
   border-style: solid;
   border-width: 6px;
   width: 50%;
@@ -28,12 +50,49 @@ h1 {
   margin: 25px;
 }
 p {
-  padding-right: 15%;
-  max-width: 35%;
+  /*padding-right: 15%;
+  max-width: 55%;*/
   text-align: center;
-  float: right;
   color: white;
   font-size: 15px;
+}
+h4 {
+  text-align: center;
+  padding-left: 10%;
+}
+#preview {
+  padding-left: 15%;
+  margin: 10px;
+  line-height: 25px;
+  background-color: white;
+  opacity: .6;
+  max-width: 60%;
+  color: black
+}
+#blog_post {
+  float: left;
+  margin-left: 25%;
+  line-height: 25px;
+  background-color: black;
+  border-radius: 4%;
+  opacity: .8;
+  max-width: 40%;
+  text-align: center;
+  padding: 10px;
+}
+#date {
+  color: black;
+  padding-left: 10%;
+}
+#date_box {
+  margin: 10px;
+  line-height: 25px;
+  background-color: white;
+  opacity: .4;
+  max-width: 80%;
+}
+#content {
+  color: white;
 }
 
 /*
@@ -65,22 +124,21 @@ p {
   padding-right: 10%;
 
 }
-
-/*
-  ========================================
-  Links
-  ========================================
-*/
-
-a {
-  text-decoration: none;
-  color: black;
+.group:before,
+.group:after {
+  content: "";
+  display: table;
 }
-a:hover {
-  color: blue;
+.group:after {
+  clear: both;
 }
-p a {
-  color: red;
+.group {
+  clear: both;
+  *zoom: 1;
+}
+#insta {
+  padding-top: 10%;
+  float: right;
 }
 
 /*
@@ -88,27 +146,43 @@ p a {
   About
   ========================================
 */
-.profile_pic {
-  height: 150px;
-  opacity: 0.6;
+#profile_pic {
+  height: 100px;
+  opacity: 0.2;
   float: left;
-  margin: 10px 10px 10px 10px;
-  border-style: solid;
-  border-width: 2px;
-  color: white;
+  border-radius: 10%;
+  padding: -10%;
+}
+#profile_pic:hover {
+  opacity: 1.0;
+  height: 250px;
+  padding: 0;
+  border-radius: 50%;
 }
 h2 {
-  font-size: 30px;
+  font-size: 150%;
   font-weight: 400;
   color: white;
+  opacity: .8;
   float: center;
   text-align: center;
-  line-height: 65px;
+  line-height: 25px;
   margin: auto;
-  padding: 0;
+  padding-right: 9%;
   width: 40%;
 }
+#about {
+  color: white;
+  margin: 20px;
+  line-height: 25px;
+  background-color: black;
+  border-radius: 10%;
 
-.profile {
-  
+  text-align: center;
+  padding: 10px;
+}
+#about_box {
+  opacity: .6;
+  padding-left: 27%;
+  max-width: 40%;
 }
