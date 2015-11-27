@@ -57,7 +57,7 @@ p a {
   float: center;
   font-family: 'Orbitron', sans-serif;
   font-size: 300%;
-  background: rgba(255, 0, 0, 0.2);
+  background: rgba(255, 0, 0, 0.1);
   border-radius: 70%;
   box-shadow: 0px, 0px, 0px, 15px white;
   line-height: 65px;
@@ -72,7 +72,7 @@ p a {
   float: center;
   text-align: left;
   line-height: 45px;
-  margin: auto;
+  padding-top: 20px;
   padding-right: 9%;
   margin: 30px;
 }
@@ -80,6 +80,9 @@ p {
   text-align: center;
   color: white;
   font-size: 15px;
+}
+h1 {
+  font-size: 200%;
 }
 h2 {
   font-size: 150%;
@@ -101,7 +104,6 @@ h4 {
   font-size: 70%;
 }
 #preview {
-
   padding: 10px;
   margin-left: 10%;
   line-height: 25px;
@@ -110,17 +112,23 @@ h4 {
   color: black;
   text-align: left;
   font-size: 85%;
+  z-index: 2;
+  position: relative;
+  border-radius: 10px;
 }
 #blog_post {
   float: left;
-  margin-left: 25%;
+  margin-left: 21%;
   line-height: 25px;
-  background-color: black;
+  margin-bottom: 5%;
+  background-color: white;
   border-radius: 4%;
   opacity: .8;
   max-width: 40%;
   text-align: center;
   padding: 10px;
+  z-index: 2;
+  position: absolute;
 }
 #date {
   color: black;
@@ -129,12 +137,14 @@ h4 {
 #date_box {
   margin: 10px;
   line-height: 25px;
-  background-color: white;
+  background-color: #ff9999;
   opacity: .4;
-  max-width: 80%;
+  max-width: 60%;
+  border-radius: 10px;
+  padding-left: 10%;
 }
 #content {
-  color: white;
+  color: black;
 }
 
 /*
@@ -144,12 +154,11 @@ h4 {
 */
 
 .nav {
+  padding-top: 15%;
   text-align: right;
 }
 .nav li {
-  /*display: inline-block;*/
-  margin: 5 5px;
-  /*vertical-align: top;*/
+  margin: 5px;
   max-width: 700px;
   padding: 10px;
 }
@@ -209,7 +218,6 @@ h4 {
   line-height: 25px;
   background-color: black;
   border-radius: 10%;
-
   text-align: center;
   padding: 10px;
 }
@@ -218,6 +226,9 @@ h4 {
   padding-left: 27%;
   max-width: 40%;
 }
+#rachel {
+  color: red;
+}
 
 /*
   ========================================
@@ -225,12 +236,13 @@ h4 {
   ========================================
 */
 footer {
+  z-index:1;
   clear: both;
   position:fixed;
   bottom:0;
-  height: 2em;
-  background-color: white;
-  opacity: .8;
+  height: 1em;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.87) 22%, rgba(234,81,67,0.42) 100%);
+  opacity: .5;
   width:100%;
   padding: 10px 0;
   text-align: right;
