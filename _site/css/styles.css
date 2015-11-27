@@ -20,7 +20,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 li a {
   color: #505050;
@@ -28,6 +28,7 @@ li a {
 }
 li a:hover {
   font-size: 120%;
+  color: red;
 }
 h2 a {
   color: white;
@@ -37,15 +38,10 @@ h2 a:hover {
   font-size: 120%;
 }
 a:hover {
-  color: red;
+  color: black;
 }
 p a {
   color: red;
-}
-#preview {
-  color: black;
-  text-align: center;
-  font-size: 85%;
 }
 
 /*
@@ -53,27 +49,34 @@ p a {
   Styling
   ========================================
 */
-h1 {
-  font-size: 180%;
-  font-weight: 500;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  float: center;
+.top {
   text-align: center;
+  width: 24%;
+  padding: 20px;
+  display: inline-block;
+  float: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 300%;
+  background: rgba(255, 0, 0, 0.2);
+  border-radius: 70%;
+  box-shadow: 0px, 0px, 0px, 15px white;
   line-height: 65px;
-  margin: auto;
-  padding-right: 9%;
-  /*border-bottom: solid;
-  border-width: 6px;
-  width: 50%;*/
-  box-shadow: 0px 0px 10px 0px white;
+  color: white;
 }
 .title {
+  display: inline-block;
+  font-size: 120%;
+  font-weight: 500;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  float: center;
+  text-align: left;
+  line-height: 45px;
+  margin: auto;
+  padding-right: 9%;
   margin: 30px;
 }
 p {
-  /*padding-right: 15%;
-  max-width: 55%;*/
   text-align: center;
   color: white;
   font-size: 15px;
@@ -88,22 +91,25 @@ h2 {
   line-height: 25px;
   margin: auto;
   padding-right: 9%;
+  padding-top: 3%;
   width: 40%;
   color: white;
 }
 h4 {
-  text-align: center;
+  text-align: inherit;
   padding-left: 10%;
   font-size: 70%;
 }
 #preview {
-  padding-left: 15%;
-  margin: 10px;
+
+  padding: 10px;
+  margin-left: 10%;
   line-height: 25px;
-  background-color: white;
-  opacity: .6;
-  max-width: 60%;
-  color: black
+  background: -webkit-linear-gradient(left, rgba(242,118,99,1) 0%, rgba(239,79,62,0.94) 7%, rgba(235,88,71,0.9) 11%, rgba(252,227,224,0.24) 85%, rgba(255,255,255,0.24) 100%);
+  max-width: 45%;
+  color: black;
+  text-align: left;
+  font-size: 85%;
 }
 #blog_post {
   float: left;
@@ -222,15 +228,14 @@ footer {
   clear: both;
   position:fixed;
   bottom:0;
-  height: 3em;
-  margin-top: -3em;
+  height: 2em;
   background-color: white;
-  opacity: .4;
+  opacity: .8;
   width:100%;
-  padding: 15px 0;
-  text-align: center;
+  padding: 10px 0;
+  text-align: right;
   text-transform: uppercase;
-  border: 3px solid rgb(211, 211, 211);
+
 }
 #contact {
   color: black;
@@ -238,4 +243,5 @@ footer {
   font-family: 'Orbitron', sans-serif;
   font-family: 'Sigmar One', cursive;
   padding-right: 12%;
+  font-size: 75%;
 }
