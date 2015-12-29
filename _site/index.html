@@ -3,53 +3,68 @@
 <head>
   <meta charset="utf-8">
   <title>BLOG</title>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css' rel='stylesheet'>
   <link href="/css/reset.css" rel="stylesheet" />
   <link href="/css/styles.css" rel="stylesheet" />
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300'
-    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300'rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 </head>
 
+<div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/">
+          <h1 class="name hide-on-small-only">k<span class="orange-text">H</span>ode<span class="orange-text">r</span></h1>
+        </a>
+        <!-- <a href="#!" class="brand-logo">Logo</a> -->
+        <ul class="left">
+          <li><a href="/" class='waves-effect waves-light'><span class="orange-text">P</span>osts</a></li>
+          <li><a href="/about.html" class='waves-effect waves-light'><span class="orange-text">A</span>bout</a></li>
+          <li><a href="https://github.com/SteveOscar" class='waves-effect waves-light'><span class="orange-text">G</span>ithub</a></li>
+          <li><a href="https://www.theretohere.com" class='waves-effect waves-light'><span class="orange-text">P</span>hotos</a></li>
+          <!-- <li><a href="https://www.instagram.com/there_to_here_"><img id="insta" src="/images/insta.png" height=40></a></li> -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+<!--
+  <div class="container"> -->
 <body>
 
-  <div class="title">
-    <h1>BLOG</h1>
-  </div>
-  <span><h1 class="top">SteveO</h1></span>
-  <nav class="nav primary-nav">
-    <ul>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/">Posts</a></li>
-      <li><a href="https://github.com/SteveOscar">Github</a></li>
-      <li><a href="https://www.theretohere.com">Photos</a></li>
-      <li><a href="/rachel.html">Rachel's Page</a></li>
-      <li><a href="https://www.instagram.com/there_to_here_"><img id="insta" src="/images/insta.png" height=40></a>
-    </ul>
-  </nav>
-  <div class="container">
 
-
-
-  <h2><a href="/2015/11/24/my-third-post.html">Rasberry Pi Zero</a></h2>
-  <h4>11-24-2015</h4>
-  <p><a href="/2015/11/24/my-third-post.html"><div id="preview">The Raspberry Pi Foundation has upped the ante when it comes to low cost single board computers, announcing a new additional to its family of microprocessors today, called Pi Zero....</div></a></p>
-
-  <h2><a href="/2015/11/23/my-second-post.html">Augmented Reality</a></h2>
-  <h4>11-23-2015</h4>
-  <p><a href="/2015/11/23/my-second-post.html"><div id="preview">Magic Leap, which has raised half a billion dollars from investors including Google, has been building its technology in secret for years. But it's getting closer to show us its...</div></a></p>
-
-  <h2><a href="/2015/11/21/my-first-post.html">Science</a></h2>
-  <h4>11-21-2015</h4>
-  <p><a href="/2015/11/21/my-first-post.html"><div id="preview">The idea that space and time themselves are not immutable, but are dynamical quantities that can evolve through the history of the universe, is one of Einstein’s most dramatic legacies....</div></a></p>
-
-
-
+<img id="posts_img" src="/images/posts.jpg" alt="" />
+<div class="post_box">
+  
+    <h2><a href="/2015/12/27/my-second-post.html">Polymorphism vs many_to_many</a></h2>
+    <p>12-27-2015</p>
+    <p><a href="/2015/12/27/my-second-post.html"><div id="preview">As a new student of Rails, I was slow to wrap my head around the difference between polymorphic associations and 'many_to_many' via has_many :though (HMT) associations using ActiveRecord. Are they...</div></a></p>
+  
+    <h2><a href="/2015/12/21/my-first-post.html">Test Post</a></h2>
+    <p>12-21-2015</p>
+    <p><a href="/2015/12/21/my-first-post.html"><div id="preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum....</div></a></p>
+  
 </div>
+
+
+<!-- </div> -->
+<script src='https://code.jquery.com/jquery-2.1.1.min.js' type='text/javascript'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js' type='text/javascript'></script>
+<script>
+  $( document ).ready(function(){
+    $(".button-collapse").sideNav();
+  });
+</script>
  </body>
  <footer>
+   <a href="https://www.instagram.com/there_to_here_"><img id="insta" src="/images/insta.png" height=40></a>
    <div id="contact">Email: steveoscaro@gmail.com</div>
+
+
  </footer>
 </html>
 

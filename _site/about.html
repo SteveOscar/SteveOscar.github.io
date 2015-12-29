@@ -3,32 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>BLOG</title>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css' rel='stylesheet'>
   <link href="/css/reset.css" rel="stylesheet" />
   <link href="/css/styles.css" rel="stylesheet" />
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300'
-    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300'rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-
-  <div class="title">
-    <h1>BLOG</h1>
+<div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/">
+          <h1 class="name hide-on-small-only">k<span class="orange-text">H</span>ode<span class="orange-text">r</span></h1>
+        </a>
+        <!-- <a href="#!" class="brand-logo">Logo</a> -->
+        <ul class="left">
+          <li><a href="/" class='waves-effect waves-light'><span class="orange-text">P</span>osts</a></li>
+          <li><a href="/about.html" class='waves-effect waves-light'><span class="orange-text">A</span>bout</a></li>
+          <li><a href="https://github.com/SteveOscar" class='waves-effect waves-light'><span class="orange-text">G</span>ithub</a></li>
+          <li><a href="https://www.theretohere.com" class='waves-effect waves-light'><span class="orange-text">P</span>hotos</a></li>
+          <!-- <li><a href="https://www.instagram.com/there_to_here_"><img id="insta" src="/images/insta.png" height=40></a></li> -->
+        </ul>
+      </div>
+    </nav>
   </div>
-  <span><h1 class="top">SteveO</h1></span>
-  <nav class="nav primary-nav">
-    <ul>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/">Posts</a></li>
-      <li><a href="https://github.com/SteveOscar">Github</a></li>
-      <li><a href="https://www.theretohere.com">Photos</a></li>
-      <li><a href="/rachel.html">Rachel's Page</a></li>
-      <li><a href="https://www.instagram.com/there_to_here_"><img id="insta" src="/images/insta.png" height=40></a>
-    </ul>
-  </nav>
-  <div class="container">
+
+
+<!--
+  <div class="container"> -->
+<body>
 
 
 <div id="date_box">
@@ -45,10 +51,20 @@
 <img id="profile_pic" src="/images/steve.jpg" alt="Steve Olson" alt="Steven Olson"/>
 
 
-</div>
+<!-- </div> -->
+<script src='https://code.jquery.com/jquery-2.1.1.min.js' type='text/javascript'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js' type='text/javascript'></script>
+<script>
+  $( document ).ready(function(){
+    $(".button-collapse").sideNav();
+  });
+</script>
  </body>
  <footer>
+   <a href="https://www.instagram.com/there_to_here_"><img id="insta" src="/images/insta.png" height=40></a>
    <div id="contact">Email: steveoscaro@gmail.com</div>
+
+
  </footer>
 </html>
 
