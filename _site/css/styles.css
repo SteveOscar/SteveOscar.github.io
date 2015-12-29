@@ -161,17 +161,19 @@ h1, .name {
 #profile_pic {
   display: block;
   height: 100px;
-  opacity: 0.2;
-  left: 12%;
+  opacity: 0.8;
+  margin: auto;
   position: relative;
-  border-radius: 10%;
-  padding: -10%;
-}
-#profile_pic:hover {
-  opacity: 3.0;
   height: 250px;
   padding: 0;
   border-radius: 50%;
+}
+#profile_pic:hover {
+  opacity: 1;
+
+}
+#about {
+  max-width: 50%;
 }
 
 /*
