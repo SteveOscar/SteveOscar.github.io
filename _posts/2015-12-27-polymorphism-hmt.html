@@ -1,24 +1,24 @@
 ---
-title: Rails Database - Polymorphism vs many_to_many 
+title: Rails Database - Polymorphism vs many_to_many
 layout: post
 date: 2015-12-27
 ---
 
 
   <p id="content"> As a new student of Rails, I was slow to wrap my head around the difference between
-    polymorphic associations and 'many_to_many' via has_many :though (HMT) associations using ActiveRecord. Are they complementary or mutually exclusive? Do polymorphic associations use many_to_many relationships? And are join tables always needed? Here are the basics...</p>
+    polymorphic associations and 'many_to_many' via has_many :through (HMT) associations using ActiveRecord. Are they complementary or mutually exclusive? Do polymorphic associations use many_to_many relationships? And are join tables always needed? Allow me to present my findings...</p>
     <br>
 
-    <p id="content"> Rails many_to_many relationships, built using HMT associations, allow a model to be connected to multiple instances of another model. So we're talking about TWO models, but with any number of instances of those models. The many_to_many aspect dictates that multiple instances of a model can be associated with another model. Many_to_many associations require a join table. Here's an example of a many_to_many setup at the model level, where a newspaper can have many articles, and an article can be in many newspapers:
+    <p id="content"> Rails many_to_many relationships, built using HMT associations, allow a model to be connected to multiple instances of another model. So we're talking about TWO models, but with any number of instances of those models. The many_to_many aspect dictates that multiple instances of a model can be associated with another model. If you wanted to associate a second model with the first (for a total of 3) without polymorphism, this would require an additional association and foreign key to be introduced. Here's an example of a many_to_many setup at the model level, where a newspaper can have many articles, and an article can be in many newspapers (many_to_many associations do require a join table):
     <br> <br> </p>
     <script src="https://gist.github.com/SteveOscar/43a942ea6d814d30daf2.js"></script>
     <br>
   <p id="content">
-    Polymorphic associations allow a model to be connected to TWO OR MORE other models. Whether or not those models have many_to_many associations is not a direct concern of polymorphism. Polymorphism is concerned with relationships between three or more models, but does not determine how many instances of those models can be connected. Polymorphic associations do not require join tables for setting up the polymorphic relationship, but a join table will be needed if those models use a many_to_many connection. Let's look at an examply of polymorphism using many_to_many associations. Our newspaper example will now focus on tags, which can be associated with both newspapers and articles (in this example, articles and news papers are no longer directly connected): </p>
+    Polymorphic associations allow a model to be connected to TWO OR MORE other models via a single association. Whether or not those models have many_to_many relationships is not a direct concern of polymorphism. Polymorphism is concerned with relationships between three or more models, but does not explicitly determine how many instances of those models can be connected. Polymorphic associations do not require join tables for setting up the polymorphic relationship, but a join table will be needed if those models use a many_to_many connection. Let's look at an example of polymorphism using many_to_many associations. Our newspaper example will now focus on tags, which can be associated with both newspapers and articles (in this example, articles and news papers are no longer directly connected): </p>
     <br> <br>
     <script src="https://gist.github.com/SteveOscar/daddf24e75dd5822f9b5.js"></script>
     <br>
   <p id="content">
-     So to summarize, polymorphism is useful when a model can belong to more than one other model, but does not determine the type of associations between instances of those models. Many_to_many associations deal with instances of models, and this concept is neither exclusive of nor dependent on polymorphism. A polymorphic model could use a many_to_many assoction, OR a has_one assoction, etc. I'll wait until my next post to explore keeping articles and news papers directly connected while also implementing the polymorphic tag assocations.
+     So to summarize, polymorphism is useful when a model needs connections to multiple other models, but does not determine the type of associations between instances of those models. Many_to_many associations deal with instances of models, and this concept is neither exclusive of nor dependent on polymorphism. A polymorphic model could use a many_to_many assoction, OR a has_one assoction, etc. I'll wait until my next post to explore keeping articles and news papers directly connected while also implementing the polymorphic tag associations.
   </p>
   <br><br><br>
