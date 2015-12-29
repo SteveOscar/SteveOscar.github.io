@@ -6,10 +6,10 @@
 
 body {
   background-image: url(/images/alice.jpg);
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size:cover;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 90%;
@@ -100,7 +100,7 @@ h4 {
   padding: 10px;
   margin-left: 3%;
   line-height: 25px;
-  background: rgba(255, 255, 255, 0.79);
+  background: rgba(255, 255, 255, 0.49);
   max-width: 65%;
   min-width: 300px;
   text-align: left;
