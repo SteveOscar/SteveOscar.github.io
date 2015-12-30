@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #888;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 90%;
 }
 #posts_img {
