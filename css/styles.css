@@ -203,14 +203,8 @@ footer {
 }
 #contact {
   float: right;
-  color: rgba(7, 56, 216, 0.52)
-  font-family: 'Indie Flower', cursive;
-  padding-left: 2%;
-  padding-bottom: 5px;
+  color: rgba(7, 56, 216, 0.52);
+  margin-right: 10px;
+  margin-bottom: 10px;
   font-size: 85%;
-}
-#insta {
-    padding-left: 30px;
-    padding-bottom: 25px;
-    float: right;
 }
