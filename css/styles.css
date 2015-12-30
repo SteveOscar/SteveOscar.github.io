@@ -85,8 +85,8 @@ h4 {
   padding: 10px;
   margin-left: 3%;
   line-height: 25px;
-  background: rgba(63, 191, 191, 0.35);
-  max-width: 600px;
+  background: rgba(63, 191, 191, 0.25);
+  max-width: 70%;
   min-width: 300px;
   text-align: left;
   /*font-size: 85%;*/
@@ -101,7 +101,6 @@ h4 {
   max-width: 900px;
   min-width: 550px;
   text-align: left;
-  /*font-size: 85%;*/
   border-radius: 10px;
 }
 #blog_post h2 {
@@ -179,10 +178,10 @@ h1, .name {
   text-align: left;
   border-radius: 10px;
 }
-.social {
-  margin: auto;
+#social_icons {
+  margin: 0 auto;
+  width: 130px;
 }
-
 /*
   ========================================
   Footer
